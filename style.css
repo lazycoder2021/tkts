@@ -1,0 +1,144 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Trirong&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box; 
+    font-family: 'Trirong';
+}
+
+.chart{
+    border:2px solid black;
+    margin-top:20px;
+}
+
+
+
+a{
+    text-decoration:none; 
+    color:white;
+}
+
+.container{
+   width:1200px;
+   border:0px solid black;
+   height:100vh;
+   margin:0px auto;
+}
+
+.navbar{
+    border:0px solid black;
+    display:flex;
+    justify-content:space-around; 
+    align-items:center;
+    height:70px;
+}
+
+.navbar-left, .navbar-right{
+    display:flex;
+}
+
+.navbar-left p, .navbar-right p{
+    margin-right:20px;
+    padding:8px 20px;
+    border:1px solid black;
+    background:black;
+    color:white; 
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.ticketForm {
+    border: 1px solid black;
+    margin: 30px auto;
+    width: 800px;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:10px;
+    flex-wrap:wrap;
+}
+
+.form-control{
+    border:0px solid black;
+    padding:5px;
+    width:350px;
+}
+
+label{
+    margin-right:5px;
+}
+
+.hide{
+    display:none;
+}
+
+.save{
+    background-color:green;
+}
+
+.update {
+    background-color: grey;
+}
+
+.save, .update{
+    margin-top:5px;
+    border:1px solid black;
+    padding:5px;
+    
+    color:white; 
+    width:100px;
+    text-align:center;
+    cursor:pointer; 
+}
+
+.ticketsContainer{
+    border:1px solid black;
+    height:100vh;
+    width:1200px;
+    margin:20px auto;
+}
+
+.ticketsContainerHeader{
+    background-color:black;
+    color:white; 
+    height:70px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+}
+
+.ticketsContainerBody {
+    background-color: white;
+    color: black;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap:wrap;
+}
+
+.comp{
+    width:150px; 
+    margin:20px;
+    text-align:center;
+}
+
+.editBtn{
+    background-color:dodgerblue;
+}
+
+.delBtn{
+    background-color:red;
+}
+
+.editBtn, .delBtn{
+    padding:3px 6px;
+    color:white;
+    cursor:pointer;
+    border-radius:4px;
+}
+

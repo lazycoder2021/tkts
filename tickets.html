@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-left">
+
+                <div class="navlink"><p><a href="tickets.html">Tickets</a></p></div>
+                <div class="navlink"><p class="ticketBtn">Raise a Ticket</p></div>
+            </div>
+            <div class="navbar-right">
+                <div class="navlink"><p>Helpdesk Login</p></div>
+
+            </div>
+        </div>
+
+        <form class="ticketForm hide">
+            <div class="form-control">
+                <label for="">Complainant Name</label>
+                <input type="text" class="cName" />
+            </div>
+            <div class="form-control">
+                <label for="">Complainant Email</label>
+                <input type="email" class="cEmail" />
+            </div>
+
+            <div class="form-control">
+                <label for="cType">Complaint Type</label>
+                <select class="cType">
+                    <option>Service Request</option>
+                    <option>Issue Fixing</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="cStatus">Complaint Status</label>
+                <select class="cStatus">
+                    <option>In Progress</option>
+                    <option>On Hold</option>
+                    <option>Request for Info</option>
+                    <option>Completed</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="cHelpdesk">Helpdesk Assigned</label>
+                <input type="email" class="cHelpdesk" />
+            </div>
+            <div class="form-control">
+                <label for="cSeverity">Complaint Severity</label>
+                <select class="cSeverity">
+                    <option>Normal</option>
+                    <option>Urgent</option>
+                    <option>High</option>
+                    <option>Low</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <button class="btn save" type="submit">SAVE</button>
+
+            </div>
+            <div class="form-control">
+
+                <button class="btn update" type="submit">UPDATE</button>
+            </div>
+
+
+        </form>
+
+
+        <div class="ticketsContainer">
+            <div class="ticketsContainerHeader">
+                <div class="compNamee">
+                    <p>Complainant Name</p>
+                </div>
+                <div class="compTypee">
+                    <p>Complaint Type</p>
+                </div>
+                <div class="compStatuss">
+                    <p>Complaint Status</p>
+                </div>
+                <div class="compHelpdeskk">
+                    <p>Helpdesk Assigned</p>
+                </div>
+                <div class="compSeverityy">
+                    <p>Complaint Severity</p>
+                </div>
+                <div class="actionss">
+                    <p>Actions</p>
+                </div>
+            </div>
+            <div class="ticketsContainerBody">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="tickets.js"></script>
+</body>
+</html>

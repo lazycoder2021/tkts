@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
+</head>
+<body>
+    <center><h2 style="margin-top:100px;">Edit User Complaint</h2></center>
+    <form class="ticketForm">
+        <div class="form-control">
+            <label for="">Complainant Name</label>
+            <input type="text" class="uName" />
+        </div>
+        <div class="form-control">
+            <label for="">Complainant Email</label>
+            <input type="email" class="uEmail" />
+        </div>
+
+        <div class="form-control">
+            <label for="uType">Complaint Type</label>
+            <select class="uType">
+                <option>Service Request</option>
+                <option>Issue Fixing</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="uStatus">Complaint Status</label>
+            <select class="uStatus">
+                <option>In Progress</option>
+                <option>On Hold</option>
+                <option>Request for Info</option>
+                <option>Completed</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="uHelpdesk">Helpdesk Assigned</label>
+            <input type="email" class="uHelpdesk" />
+        </div>
+        <div class="form-control">
+            <label for="uSeverity">Complaint Severity</label>
+            <select class="uSeverity">
+                <option>Normal</option>
+                <option>Urgent</option>
+                <option>High</option>
+                <option>Low</option>
+            </select>
+        </div>
+        
+        <div class="form-control">
+
+            <button class="update uDetails" type="submit">UPDATE</button>
+        </div>
+
+
+    </form>
+
+
+    <script src="index.js"></script>
+    <script src="edit.js"></script>
+</body>
+</html>
